@@ -26,3 +26,14 @@
   3. [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
   4. [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
   5. [Testing Playground](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano)
+
+## GIT COMMANDS
+ - git init  (инициализируем гит в проекте)
+ - git add index.html (добавляем файл в индекс)
+ - git commit -m "added index.html" (делаем коммит с добавлеными файлами)
+
+ - git remote add origin ИМЯ РЕПОЗИТОРИЯ   (соединяем наш локальный репозиторий с удаленным)
+ - git config --global user.name "ИМЯ НА ГИТЕ" (прописываем креды, делается один раз)
+ - git config --global user.email "EMAIL НА ГИТЕ" (прописываем креды, делается один раз)
+
+ - git push -u origin master (отправляем коммит на удаленный репозиторий, далее команда просто git push)
