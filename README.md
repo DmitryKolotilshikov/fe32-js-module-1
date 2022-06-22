@@ -27,6 +27,10 @@
   4. [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
   5. [Testing Playground](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano)
 
+## Useful Links
+
+  1. [Изучение GIT в интерактивной форме](https://learngitbranching.js.org/?locale=ru_RU)
+
 ## GIT COMMANDS
  - git init  (инициализируем гит в проекте)
  - git add index.html (добавляем файл в индекс)
