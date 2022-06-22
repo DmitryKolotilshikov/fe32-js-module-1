@@ -41,3 +41,11 @@
  - git config --global user.email "EMAIL НА ГИТЕ" (прописываем креды, делается один раз)
 
  - git push -u origin master (отправляем коммит на удаленный репозиторий, далее команда просто git push)
+
+<pre align="center">
+    |\   /| 
+   \|_|/
+   /. .\
+   =\_Y_/=
+   {>o<}
+</pre>
