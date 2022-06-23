@@ -27,12 +27,21 @@
   4. [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
   5. [Testing Playground](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano)
 
-## Useful Links
+# Useful Links
 
+## Docs
+  
+  1. [Learn JavaScript](https://learn.javascript.ru/)
+  2. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
+  
+## Services
+  
   1. [Изучение GIT в интерактивной форме](https://learngitbranching.js.org/?locale=ru_RU)
-  2. [Learn JavaScript](https://learn.javascript.ru/)
-  3. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
-  4. [CodeWars](https://www.codewars.com/)
+  2. [CodeWars](https://www.codewars.com/)
+
+## Topics
+
+  1. [case-styles-camel-pascal-snake-and-kebab](https://betterprogramming.pub/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841)
 
 ## Presentations
 
