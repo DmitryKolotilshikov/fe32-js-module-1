@@ -4,6 +4,10 @@
 ---
 # HOMEWORK 2
 
+```
+    learn.javascript.ru  прочитать п1.1 - п.2.7
+```
+
 ## Выполнить упражнения
 
 ### NORMAL level

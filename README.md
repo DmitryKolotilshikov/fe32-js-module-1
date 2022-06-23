@@ -30,13 +30,16 @@
 ## Useful Links
 
   1. [Изучение GIT в интерактивной форме](https://learngitbranching.js.org/?locale=ru_RU)
+  2. [Learn JavaScript](https://learn.javascript.ru/)
+  3. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
+  4. [CodeWars](https://www.codewars.com/)
 
 ## GIT COMMANDS
  - git init  (инициализируем гит в проекте)
  - git add index.html (добавляем файл в индекс)
  - git commit -m "added index.html" (делаем коммит с добавлеными файлами)
 
- - git remote add origin ИМЯ РЕПОЗИТОРИЯ   (соединяем наш локальный репозиторий с удаленным)
+ - git remote add origin ИМЯ РЕПОЗИТОРИЯ (соединяем наш локальный репозиторий с удаленным)
  - git config --global user.name "ИМЯ НА ГИТЕ" (прописываем креды, делается один раз)
  - git config --global user.email "EMAIL НА ГИТЕ" (прописываем креды, делается один раз)
 
