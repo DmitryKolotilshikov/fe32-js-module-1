@@ -34,6 +34,10 @@
   3. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
   4. [CodeWars](https://www.codewars.com/)
 
+## Presentations
+
+  1. [What is JavaScript](https://slides.com/dmitryko-1/hello-world/fullscreen)
+
 ## GIT COMMANDS
  - git init  (инициализируем гит в проекте)
  - git add index.html (добавляем файл в индекс)
