@@ -1,0 +1,50 @@
+console.log("Task 1");
+let x = 20;
+let y = 58;
+let z = 42;
+sum = x+y+z;
+console.log(sum);
+console.log("Task 2");
+let sec =60;
+let min = 60;
+let hours = 24;
+let days = 365;
+myAgeInSeconds = 22*days*hours*min*sec;
+console.log(myAgeInSeconds);
+console.log("Task 3");
+let count = 42;
+let userName = '42';
+let strcount = String(count);
+let str1count = '${count}';
+console.log(typeof strcount);
+console.log(typeof str1count);
+let numUsername = Number(userName);
+let numUsername1 = +userName;
+console.log(typeof numUsername);
+console.log(typeof numUsername1);
+console.log("Task 4");
+let a = 1
+let b = 2
+let c = "белых медведей"
+let abc = String(a) + String(b) + " " + c; 
+console.log(abc);
+console.log("Task 5");
+let first = "доступ"; 
+let second = "морпех";
+let third = "наледь";
+let fourth = "попрек";
+let fifth = "рубило";
+let lengthWords = fifth+fourth+third+second+first;
+console.log(lengthWords.length);
+console.log("Task 6");
+let variable1 = "string";
+let variable2 = 6;
+let variable3 = true;
+console.log("Variable1:", variable1, "have type:", typeof variable1);
+console.log("Variable2:", variable2, "have type:", typeof variable2);
+console.log("Variable3:", variable3, "have type:", typeof variable3);
+console.log("Task 7");
+const myAge = prompt('Enter your age');
+const myName = prompt('Enter your name');
+console.log('Мой возраст: ', myAge, 'Мое имя:',myName);
+
