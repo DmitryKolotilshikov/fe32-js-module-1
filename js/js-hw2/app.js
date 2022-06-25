@@ -28,6 +28,14 @@ let q = 1
 let w = 2
 let e = "белых медведей"
 
-let sava = q+''+w+' '+e
+let result = q+''+w+' '+e
 
-console.log(sava)
+console.log(result)
+
+const elements= ['доступ','морпех','наледь','попрек', 'рубило'] 
+let length = 0
+for(let i=0; i<5; ++i){
+    length+=elements[i].length
+}
+
+console.log(length)
