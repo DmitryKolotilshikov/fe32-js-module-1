@@ -23,3 +23,11 @@ let countString = String(count)
 
 console.log(typeof  countString, userNameNumber)
 
+
+let q = 1
+let w = 2
+let e = "белых медведей"
+
+let sava = q+''+w+' '+e
+
+console.log(sava)
