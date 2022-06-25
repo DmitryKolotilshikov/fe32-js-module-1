@@ -15,3 +15,11 @@ let myAgeInMinute= myAgeInHours*60
 let myAgeInSeconds= myAgeInHours*60
 
 console.log(myAgeInSeconds)
+
+let count = 42 
+let userName= '42'
+let userNameNumber = Number(userName)
+let countString = String(count)
+
+console.log(typeof  countString, userNameNumber)
+
