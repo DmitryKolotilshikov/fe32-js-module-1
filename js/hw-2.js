@@ -1,20 +1,20 @@
 // Task 1
 
-let x = 20;
-let y = 58;
-let z = 42;
-let sum = x + y + z;
+const x = 20;
+const y = 58;
+const z = 42;
+const sum = x + y + z;
 console.log(sum);
 
 // Task 2
 
-let sec = 60;
-let min = 60;
-let h = 24;
-let days = 365;
+const sec = 60;
+const min = 60;
+const h = 24;
+const days = 365;
 
 
-let myAgeInSeconds=30 * days * h * min * sec;
+const myAgeInSeconds=30 * days * h * min * sec;
 console.log(myAgeInSeconds);
 
 
@@ -42,9 +42,9 @@ console.log(userNameToNumber);*/
 
 // Task 4
 
-let a = 1;
-let b = 2;
-let c = 'белых медведей';
+const a = 1;
+const b = 2;
+const c = 'белых медведей';
 
 let aString = a.toString();
 let bString = b.toString();
@@ -91,11 +91,11 @@ let b = 3;
 [a, b] = [b, a];
 
 //Task 2
-let codeWord1 = "обернись";
-let codeWord2 = "неужели";
-let codeWord3 = "огурцы";
-let codeWord4 = "липкие";
-let codeWord5 = "?!";
+const codeWord1 = "обернись";
+const codeWord2 = "неужели";
+const codeWord3 = "огурцы";
+const codeWord4 = "липкие";
+const codeWord5 = "?!";
 
 let cipher = codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1];
 
