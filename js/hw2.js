@@ -59,7 +59,7 @@ const first = 'строка';
 const second = 42;
 const third = true;
 console.log('Variable:first have', typeof first);
-console.log('Variable:second have', typeof second');
+console.log('Variable:second have', typeof second);
 console.log('Variable:third have', typeof third);
 
 //Task 7.Запросить у пользователя имя и возраст и вывести их в консоль.
