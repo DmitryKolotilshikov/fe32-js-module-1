@@ -44,10 +44,10 @@
 
        const countToString = ' ' + count;
        const userNameToNumber = + userName;
-       console.log (countToString);
-       console.log (userNameToNumber);
-       console.log (typeof(countToString));
-       console.log (typeof (userNameToNumber));
+       console.log(countToString);
+       console.log(userNameToNumber);
+       console.log(typeof(countToString));
+       console.log(typeof (userNameToNumber));
 
     //    2 путь:
         // const count = 42;
@@ -76,7 +76,7 @@
      const secondString = b.toString();
 
 
-     console.log (firstString+secondString + ' ' +c);
+     console.log(firstString + secondString + ' ' + c);
 
 
 // Task 5 💻
@@ -95,7 +95,7 @@
     const fifthWord = 'рубило';
 
     const lengthWords = firstWord+secondWord+thirdWord+fourthWord+fifthWord;
-    console.log (lengthWords.length);
+    console.log(lengthWords.length);
 
 // Task 6 💻
 // Создать 3 переменные разных типов и вывести в консоль для каждой из них строку следующего вида:
@@ -117,5 +117,5 @@
     const enterName = prompt('Введите ваше имя');
     const enterAge = prompt ('Введите ваш возраст');
 
-    console.log (enterName);
-    console.log (enterAge);
+    console.log(enterName);
+    console.log(enterAge);
