@@ -88,6 +88,7 @@ switch(worldSide) {
 
 
 //Advanced level
+
 //Task-1
 let usersInput = 'пОлИнА нАбЕрЕжНаЯ';
 let response = usersInput.toLowerCase().trim();
