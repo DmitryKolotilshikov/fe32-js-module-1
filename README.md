@@ -33,6 +33,11 @@
   
   1. [Learn JavaScript](https://learn.javascript.ru/)
   2. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
+  3. [NUMBER | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+  4. [STRING | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+  5. [IF ELSE | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+  6. [SWITCH | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+  7. [FOR | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
   
 ## Services
   
