@@ -42,7 +42,7 @@ console.log(`Shall i goto work - ${shouldToGo}`);
 //Task-5
 const userNumber = prompt("Enter your number: ");
 
-if (userNumber % 5 === 0 && userNumber % 3 === 0) {
+if ((userNumber % 5 === 0) && (userNumber % 3 === 0)) {
     console.log("FizBuz");
 }
 else if (userNumber % 5 === 0) {
@@ -90,7 +90,7 @@ switch(worldSide) {
 //Advanced level
 
 //Task-1
-let usersInput = 'пОлИнА нАбЕрЕжНаЯ';
+const usersInput = 'пОлИнА нАбЕрЕжНаЯ';
 let response = usersInput.toLowerCase().trim();
 let string = String();
 
@@ -115,19 +115,19 @@ alert(string);
 
 //Task-2
 let isRunning = true;
-let variable = Number();
+let inputNumber = Number();
 
 while (isRunning) {
-    variable = parseFloat(prompt("Enter your variable:"));
+    inputNumber = parseFloat(prompt("Enter your variable:"));
 
     const variableForDiff = parseFloat(prompt("Enter how much you want to subtract: "));
     const variableForSum = parseFloat(prompt("Enter how much you want to add: "));
     const multiplyVariable = parseFloat(prompt("Enter how much you want to multiply: "));
     const divideVariable = parseFloat(prompt("Enter how much you want to divide: "));
 
-    const result = ((((variable - variableForDiff) + variableForSum) * multiplyVariable) / divideVariable);
+    const result = ((((inputNumber - variableForDiff) + variableForSum) * multiplyVariable) / divideVariable);
 
-    alert(`((((${variable} - ${variableForDiff}) + ${variableForSum}) * ${multiplyVariable}) / ${divideVariable}) = ${result}`);
+    alert(`((((${inputNumber} - ${variableForDiff}) + ${variableForSum}) * ${multiplyVariable}) / ${divideVariable}) = ${result}`);
 
     isRunning = confirm("Once again?!");
 }
