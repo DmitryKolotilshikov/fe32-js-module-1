@@ -43,7 +43,7 @@ const apple = false;
 const orange = true;
 const shouldGoToWork = 'Go work';
 const stayHome = 'Stay home!';
-if ((documents && pen && apple) || (documents && pen && orange)) {
+if (key && documents && pen && (apple || orange)) {
   console.log(shouldGoToWork);
 } else {
   console.log(stayHome);
