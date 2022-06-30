@@ -208,5 +208,5 @@ console.log('ADVANCED TASK 2');
 console.log(cipher);
 
 /*
-  END ADVANCED TASK 2
+  ==================================
 */
