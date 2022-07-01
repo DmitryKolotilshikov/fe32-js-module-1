@@ -27,12 +27,30 @@
   4. [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
   5. [Testing Playground](https://chrome.google.com/webstore/detail/testing-playground/hejbmebodbijjdhflfknehhcgaklhano)
 
-## Useful Links
+# Useful Links
 
+## Docs
+  
+  1. [Learn JavaScript](https://learn.javascript.ru/)
+  2. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
+  3. [NUMBER | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+  4. [STRING | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+  5. [IF ELSE | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+  6. [SWITCH | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+  7. [FOR | MDN Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+  
+## Services
+  
   1. [Изучение GIT в интерактивной форме](https://learngitbranching.js.org/?locale=ru_RU)
-  2. [Learn JavaScript](https://learn.javascript.ru/)
-  3. [MDN Mozilla](https://developer.mozilla.org/ru/docs/Web/JavaScript)
-  4. [CodeWars](https://www.codewars.com/)
+  2. [CodeWars](https://www.codewars.com/)
+
+## Topics
+
+  1. [case-styles-camel-pascal-snake-and-kebab](https://betterprogramming.pub/string-case-styles-camel-pascal-snake-and-kebab-case-981407998841)
+
+## Presentations
+
+  1. [What is JavaScript](https://slides.com/dmitryko-1/hello-world/fullscreen)
 
 ## GIT COMMANDS
  - git init  (инициализируем гит в проекте)
