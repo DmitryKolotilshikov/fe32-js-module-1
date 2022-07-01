@@ -63,10 +63,10 @@ const apple = false;
 const orange = true;
 
 if (key && documents && pen && (apple || orange)) {
-   let shouldGoToWork = "Go to work";
+   const shouldGoToWork = "Go to work";
    console.log(shouldGoToWork);
 } else {
-   let shouldGoToWork = "Stay at home";
+   const shouldGoToWork = "Stay at home";
    console.log(shouldGoToWork);
 }
 
@@ -77,7 +77,7 @@ if (key && documents && pen && (apple || orange)) {
 2. Если число делится без остатка на 3 выводим сообшение Buz
 3. Если число делится без остатка и на 3 и на 5 выводим сообшение FizBuz */
 
-let userNumber = prompt ('Введите число');
+const userNumber = prompt ('Введите число');
 
 if (userNumber % 3 == 0 && userNumber % 5 == 0) {
       console.log ('FizBuz')
@@ -96,7 +96,7 @@ if (num % 5 == 0) {
 Если меньше, то выводит сообщение - Пей колу.
 Добавить условие, что если возраст от 16-18, выводим сообщение - Можешь выкурить сигаретку, только маме не говори.*/
 
-let userAge = prompt ('Введите ваш возраст');
+const userAge = prompt ('Введите ваш возраст');
 
 if (userAge < 18) {
    alert ('Пей колу');
@@ -162,13 +162,13 @@ alert (`Привет, ${nameAlert}!`)
 По окончании вывести пользователю alert, содержащий формулу и результат например:
 ((((6 - 10) + 5) * 20) / 2 = 110) */
 
-let userNumber = prompt ('Введите число');
+const userNumber = prompt ('Введите число');
 
-let userNumberMinus = prompt ('Сколько отнять?');
-let userNumberPlus = prompt ('Сколько прибавить?');
-let userNumberMultiply = prompt ('На сколько умножить?');
-let userNumberDivide = prompt ('На сколько разделить?');
-let result = ((((userNumber - userNumberMinus ) + userNumberPlus ) * userNumberMultiply ) / userNumberDivide);
+const userNumberMinus = prompt ('Сколько отнять?');
+const userNumberPlus = prompt ('Сколько прибавить?');
+const userNumberMultiply = prompt ('На сколько умножить?');
+const userNumberDivide = prompt ('На сколько разделить?');
+const result = ((((userNumber - userNumberMinus ) + userNumberPlus ) * userNumberMultiply ) / userNumberDivide);
 
 alert (`Ваша формула (((${userNumber} - ${userNumberMinus}) + ${userNumberPlus}) * ${userNumberMultiply}) / ${userNumberDivide}= ${result}`);
 
