@@ -19,15 +19,10 @@ console.log(typeof five);
 // Task 2
 //С помощью условий выведите в консоль разработчика наибольшее число.
 
-    let height = 15
-    let width = 20
-
-     if (height<width){
-         console.log(width);
-        }
-         else{
-            console.log(height);
-         }
+    const height = 15
+    const width = 20   
+  console.log( Math.max(height, width));
+         
 
 //Task 3 
 //Написать перебор от 1 до 20, где выведутся. все числа кратные трём.
@@ -35,7 +30,7 @@ console.log(typeof five);
 
 
  for(let i = 1; i < 20; i++) {
-    if (i % 3) {
+    if (i % 3 === 0) {
          continue;
      }
      console.log(i);
@@ -46,14 +41,14 @@ console.log(typeof five);
 //Нам точно нужны ключи документы и ручка, но из еды нам надо яблоко или апельсин. 
 //Для решения этой задачи нам помогут логические операторы **`|| &&`**.
 
-    let key = true
-    let documents = true
-    let pen = true
-    let apple = false
-    let orange = true
+    const key = true
+    const documents = true
+    const pen = true
+    const apple = false
+    const orange = true
     const shouldGoToWork = 'Go work';
     const stayHome = 'Stay home!';
-    if ((documents && pen && apple) || (documents && pen && orange)) {
+    if (key && documents && pen && (apple || orange)) {
       console.log(shouldGoToWork);
     } else {
       console.log(stayHome);
