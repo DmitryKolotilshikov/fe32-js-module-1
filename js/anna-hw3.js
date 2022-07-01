@@ -53,10 +53,10 @@ const apple = false;
 const orange = true;
 
 if (key && documents && pen && (apple || orange)) {
-    let shouldGoToWork = "Можем идти!";
+    const shouldGoToWork = "Можем идти!";
     console.log(shouldGoToWork);
 } else {
-    let shouldGoToWork = "Не готов!";
+    const shouldGoToWork = "Не готов!";
     console.log(shouldGoToWork);
 }
 
@@ -68,12 +68,15 @@ if (key && documents && pen && (apple || orange)) {
 3. Если число делится без остатка и на 3 и на 5 выводим сообшение FizBuz */
 
 const anyNumber = prompt('Введите число');
+const check_1 = (anyNumber / 3) === 0;
+const check_2 = (anyNumber / 5) === 0;
 
-if (anyNumber / 3 === 0 && anyNumber / 5 === 0) {
+
+if (check_1 && check_2) {
   alert('FizBuz')
-} else if (anyNumber / 3 === 0) {
+} else if (check_1) {
   alert('Buz')
-} else if (anyNumber / 5 === 0) {
+} else if (check_2) {
   alert('Fiz')
 }
 
