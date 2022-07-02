@@ -77,3 +77,28 @@ function fooboo(bolean, foo, boo) {
   }
 }
 console.log(fooboo(true))
+
+
+// ADVANCED level
+// Task 2 man_teacher
+// Ваша задача - разбить плитку шоколада заданного размера n x m на маленькие квадраты.Каждый квадрат имеет размер 1 x1 и не может быть разбит.Реализуйте функцию, которая будет возвращать минимальное количество необходимых надломов.
+
+// Например, если вам дается плитка шоколада размером 2 x 1, вы можете разделить ее на отдельные квадраты всего за один надлом, но для размера 3 x 1 вы должны сделать два надлома.
+
+// Если входные данные недействительны, вы должны вернуть 0(поскольку надломы не требуются, если у нас нет шоколада для разделения).Ввод всегда будет неотрицательным целым числом.
+function minSumFractures(enterWidth, enterHeight) {
+  let minSumFractures = 0
+  if ((enterHeight && enterWidth) >= 1) {
+    let collFracturesHeight = Math.ceil((enterHeight / 2))
+    let collFracturesWidth = Math.ceil(enterWidth / 2)
+    if (collFracturesHeight <= collFracturesWidth) {
+      minSumFractures = collFracturesWidth
+    } else if (collFracturesHeight => collFracturesWidth) {
+      minSumFractures = collFracturesHeight
+    }
+  } else if ((enterHeight && enterWidth) <= 1) {
+    minSumFractures = 0
+  }
+  return (minSumFractures)
+}
+console.log(minSumFractures(1, 3))
