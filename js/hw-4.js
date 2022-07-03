@@ -2,7 +2,7 @@
 // Написать функцию getSum, которая будет высчитывать сумму чисел от нуля, до параметра, который мы в неё передаем. */
 function getSum(num) {
   let res = 0;
-  for (let i = 0; i <= 100; i++) {
+  for (let i = 0; i <= num; i++) {
     res = res + i;
   }
   return (res);
@@ -102,3 +102,62 @@ function minSumFractures(enterWidth, enterHeight) {
   return (minSumFractures)
 }
 console.log(minSumFractures(1, 3))
+
+
+// Task 3 man_teacher
+// Напишите программу для вычисления общей стоимости покупки телефонов.Вы будете продолжать покупать телефоны(подсказка: циклы!), пока у вас не закончатся деньги на банковском счете.Вы также будете покупать аксессуары для каждого из телефонов.
+const userName = prompt('Привет как тебя зовут?');
+const otvetUserName = confirm(`Очень приятно ${userName}, Вы желаете приобрести Apple Iphone 13Pro оптом?`);
+const sumMob = 800;
+const sumAcs = 25;
+const tax = 5;
+
+
+if (otvetUserName === true) {
+  let otvetPocupki = confirm(`${userName }, стоимость Apple Iphone 13Pro составляет 850$`);
+  if (otvetPocupki === true) {
+    const otvetAcsis = prompt(`${userName}, какой аксесуар желаете добавить?`, 'Введите чехол, зарядное, защитное стекло');
+    switch (otvetAcsis) {
+      case 'чехол':
+        alert(`${userName}, Стоимость чехла 15$`);
+        break
+      case 'зарядное':
+        alert(`${userName}, Стоимость чехла 15$`);
+        break
+      case 'защитное стекло':
+        alert(`${userName}, Стоимость чехла 15$`);
+        break
+      default:
+        prompt(`${userName}, попробуйте еще раз`);
+    }
+  } else {
+    alert('Вы отменили действие, попробуйте снова!');
+  }
+} else {
+  alert(`До скорых встреч ${userName }`);
+}
+
+
+const sumOfBank = prompt(`${userName}, укажите на какую общую сумму в долларах США Вы желаете приобрести мобильные телефоны и аксесуары?`);
+const sumShop = function(sumOfBank) {
+  let kalcMobTelAcs = 0;
+  const sumTax = ((sumMob + sumAcs) * tax) / 100
+  for (let i = 0; i <= sumOfBank; i++) {
+    sumOfBank = sumOfBank - (sumMob + sumAcs + sumTax);
+    kalcMobTelAcs = i
+  }
+  return (kalcMobTelAcs);
+}
+alert(`На данную сумму, c учетом налога (5%) Вы можете приобрести ${sumShop(sumOfBank)} модел(ей) мобильного телефона Apple Iphone 13Pro и чехлов к ним.`);
+
+
+const kalcMobTelAcs = prompt(`Укажите сколько Вы жеkаете приобрести мобильных телефонов?`);
+let sumOfShop = (sumMob + sumAcs) * kalcMobTelAcs
+const sumOfTax = sumOfShop * 7 / 100
+sumOfShop = sumOfShop + sumOfTax
+alert(`Общая сумма, приобретенных ${kalcMobTelAcs} мобильных телефонов и чехлов к ним, составляет ${sumOfShop}$`)
+if (sumOfBank < sumOfShop) {
+  alert(`У Вас не достаточно денежных средств для покупки ${kalcMobTelAcs} мобильных телефонов и чехлов к ним`)
+} else {
+  alert('Приступить к оформлению?')
+}
