@@ -43,7 +43,7 @@ const apple = false;
 const orange = true;
 const shouldGoToWork = 'Go work';
 const stayHome = 'Stay home!';
-if ((documents && pen && apple) || (documents && pen && orange)) {
+if (key && documents && pen && (apple || orange)) {
   console.log(shouldGoToWork);
 } else {
   console.log(stayHome);
@@ -61,8 +61,7 @@ if (num % 5 == 0) {
   console.log('Fiz');
 } else if (num % 3 == 0) {
   console.log('Buz');
-}
-if (num % 3 == 0 && num % 5 == 0) {
+} else if (num % 3 == 0 && num % 5 == 0) {
   console.log('FizBuz');
 }
 
@@ -79,8 +78,7 @@ if (age > 18) {
   console.log('Попей пивка');
 } else if (age < 18) {
   console.log('Пей колу');
-}
-if (age <= 18 && age >= 16) {
+} else if (age <= 18 && age >= 16) {
   console.log('Можешь выкурить сигаретку, только маме не говори.');
 }
 
