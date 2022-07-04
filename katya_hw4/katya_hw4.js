@@ -127,7 +127,7 @@ console.log (getSumNumbers(3558));
 // и false в любом другом случае.
 
   function isTriangle(a,b,c) {
-    if ((b + c > a) && (a + c > b) && (a + b > c )) {
+    if ((b + c - a) > 0 && (a + c - b) > 0 && (a + b - c ) > 0) {
       console.log ('true');
     }
     else { console.log ('false');
