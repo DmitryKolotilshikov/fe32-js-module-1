@@ -111,7 +111,21 @@ const otvetUserName = confirm(`Очень приятно ${userName}, Вы же�
 const sumMob = 800;
 const sumAcs = 25;
 const tax = 5;
+const sumTax = ((sumMob + sumAcs) * tax) / 100
 
+const sumShop = function(sumOfBank) {
+  let kalcMobTelAcs = 0;
+
+  for (let i = 0; i <= sumOfBank; i++) {
+    sumOfBank = sumOfBank - (sumMob + sumAcs + sumTax);
+    kalcMobTelAcs = i
+  }
+  return (kalcMobTelAcs);
+}
+
+let sumOfBank
+let kalcMobTelAcs
+let sumOfShop
 
 if (otvetUserName === true) {
   let otvetPocupki = confirm(`${userName }, стоимость Apple Iphone 13Pro составляет 850$`);
@@ -130,34 +144,23 @@ if (otvetUserName === true) {
       default:
         prompt(`${userName}, попробуйте еще раз`);
     }
+    sumOfBank = prompt(`${userName}, укажите на какую общую сумму в долларах США Вы желаете приобрести мобильные телефоны и аксесуары?`);
+    if (sumOfBank) {
+      alert(`На данную сумму, c учетом налога (5%) Вы можете приобрести ${sumShop(sumOfBank)} модел(ей) мобильного телефона Apple Iphone 13Pro и чехлов к ним.`);
+      kalcMobTelAcs = prompt(`Укажите сколько Вы желаете приобрести мобильных телефонов?`);
+      if (kalcMobTelAcs) {
+        sumOfShop = ((sumMob + sumAcs) * kalcMobTelAcs) + sumTax;
+        alert(`Общая сумма, приобретенных ${kalcMobTelAcs} мобильных телефонов и чехлов к ним, составляет ${sumOfShop}$`);
+      }
+      if (sumOfBank < sumOfShop) {
+        alert(`У Вас не достаточно денежных средств для покупки ${kalcMobTelAcs} мобильных телефонов и чехлов к ним`)
+      } else if (sumOfBank > sumOfShop) {
+        alert('Приступить к оформлению?')
+      }
+    }
   } else {
     alert('Вы отменили действие, попробуйте снова!');
   }
 } else {
   alert(`До скорых встреч ${userName }`);
-}
-
-
-const sumOfBank = prompt(`${userName}, укажите на какую общую сумму в долларах США Вы желаете приобрести мобильные телефоны и аксесуары?`);
-const sumShop = function(sumOfBank) {
-  let kalcMobTelAcs = 0;
-  const sumTax = ((sumMob + sumAcs) * tax) / 100
-  for (let i = 0; i <= sumOfBank; i++) {
-    sumOfBank = sumOfBank - (sumMob + sumAcs + sumTax);
-    kalcMobTelAcs = i
-  }
-  return (kalcMobTelAcs);
-}
-alert(`На данную сумму, c учетом налога (5%) Вы можете приобрести ${sumShop(sumOfBank)} модел(ей) мобильного телефона Apple Iphone 13Pro и чехлов к ним.`);
-
-
-const kalcMobTelAcs = prompt(`Укажите сколько Вы жеkаете приобрести мобильных телефонов?`);
-let sumOfShop = (sumMob + sumAcs) * kalcMobTelAcs
-const sumOfTax = sumOfShop * 7 / 100
-sumOfShop = sumOfShop + sumOfTax
-alert(`Общая сумма, приобретенных ${kalcMobTelAcs} мобильных телефонов и чехлов к ним, составляет ${sumOfShop}$`)
-if (sumOfBank < sumOfShop) {
-  alert(`У Вас не достаточно денежных средств для покупки ${kalcMobTelAcs} мобильных телефонов и чехлов к ним`)
-} else {
-  alert('Приступить к оформлению?')
 }
