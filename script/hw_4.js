@@ -5,7 +5,7 @@
   Если передадим число 100 то, надо вычислить сумму чисел от 0 до 100 (должно получится 5050)
 */
 
-/*console.log('TASK 1');
+console.log('TASK 1');
 const getSumNumber = prompt('Enter number:');
 
 function getSum(num) {
@@ -17,7 +17,7 @@ function getSum(num) {
 
   console.log(res);
 }
-getSum(getSumNumber);*/
+getSum(getSumNumber);
 
 /*
   ==================================
@@ -33,7 +33,7 @@ getSum(getSumNumber);*/
   Мы пишем функцию для хорошего банка, поэтому сумма кредита не увеличивается.
 */
 
-/*console.log('TASK 2');
+console.log('TASK 2');
 const creditBudget = prompt('Enter credit budget:');
 
 function getCreditRes(price) {
@@ -45,7 +45,7 @@ function getCreditRes(price) {
   console.log(calculateCreditOverpayment);
 }
 
-getCreditRes(creditBudget);*/
+getCreditRes(creditBudget);
 
 /*
   ==================================
@@ -63,12 +63,12 @@ getCreditRes(creditBudget);*/
   После вызова функция должна вернуть переданную строку обрезанную по значениям от и по
 */
 
-/*console.log('TASK 3');
+console.log('TASK 3');
 const stringToBeTrimmed = prompt('Enter string to trim:');
 const trimFrom = prompt('Enter number to trim from:');
 const trimTo = prompt('Enter number to trim to:');
 const trimString = (stringToBeTrimmed, trimFrom, trimTo) => stringToBeTrimmed.slice(trimFrom, trimTo);
-console.log(trimString(stringToBeTrimmed, trimFrom, trimTo));*/
+console.log(trimString(stringToBeTrimmed, trimFrom, trimTo));
 
 /*
   ==================================
@@ -82,7 +82,7 @@ console.log(trimString(stringToBeTrimmed, trimFrom, trimTo));*/
   Для 2021 это будет 5
 */
 
-/*console.log('TASK 4');
+console.log('TASK 4');
 const numToBeSummed = String(prompt('Enter number to sum numbers:'));
 
 function getSumNumbers(sum) {
@@ -95,7 +95,7 @@ function getSumNumbers(sum) {
   console.log(sumNumbersRes);
 }
 
-getSumNumbers(numToBeSummed);*/
+getSumNumbers(numToBeSummed);
 
 /*
   ==================================
