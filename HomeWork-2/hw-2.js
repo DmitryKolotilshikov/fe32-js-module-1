@@ -1,9 +1,9 @@
 // Task 1 
 // Создайте переменные, затем сложите их и выведите результат в консоль разработчика.
 
-let x = 20
-let y = 58
-let z = 42
+const x = 20
+const y = 58
+const z = 42
 
 let n = x + y + z
 console.log(n)
