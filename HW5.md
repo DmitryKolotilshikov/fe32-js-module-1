@@ -57,7 +57,7 @@ const colors = {
         andrey: 500,
         sveta: 413,
         anton: 987,
-        andrey: 664,
+        maxim: 664,
         alexandra: 199
     }
 ```
