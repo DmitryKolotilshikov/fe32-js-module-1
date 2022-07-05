@@ -3,16 +3,12 @@
   Создайте переменные, затем сложите их и выведите результат в консоль разработчика.
 */
 
-let x = 20;
-let y = 58;
-let z = 42;
+const x = 20;
+const y = 58;
+const z = 42;
 
 console.log('TASK 1');
 console.log(`The sum of variables is ${x + y + z}`);
-
-/*
-  END TASK 1
-*/
 
 /*
   ==================================
@@ -35,15 +31,11 @@ const minutesPerHour = 60;
 const hoursPerDay = 24;
 const daysPerYear = 365;
 const yearOfBirth = 1992;
-let currentYear = new Date().getFullYear();
-let myAgeInSeconds = (currentYear - yearOfBirth) * daysPerYear * hoursPerDay * minutesPerHour * secondsPerMinute;
+const currentYear = new Date().getFullYear();
+const myAgeInSeconds = (currentYear - yearOfBirth) * daysPerYear * hoursPerDay * minutesPerHour * secondsPerMinute;
 
 console.log('TASK 2');
 console.log(`My age in seconds is ${myAgeInSeconds}`);
-
-/*
-  END TASK 2
-*/
 
 /*
   ==================================
@@ -59,22 +51,18 @@ console.log(`My age in seconds is ${myAgeInSeconds}`);
   Создайте две переменные. Поместите в них переменную **`count`** и превратите в строку, а **`userName`** наоборот в число. Попробуйте реализовать задачу двумя разными способами.
 */
 
-let count = 42;
-let userName = '42';
+const count = 42;
+const userName = '42';
 
-let countToString = String(count);
-let countToStringAlt = '' + count;
+const countToString = String(count);
+const countToStringAlt = '' + count;
 
-let userNameToInt = Number(userName);
-let userNameToIntAlt = parseInt(userName);
+const userNameToInt = Number(userName);
+const userNameToIntAlt = parseInt(userName);
 
 console.log('TASK 3');
 console.log( `count is ${typeof count}, countToString is ${typeof countToString}, countToStringAlt is ${typeof countToStringAlt}`);
 console.log(`userName is ${typeof userName}, userNameToInt is ${typeof userNameToInt}, userNameToIntAlt is ${typeof userNameToIntAlt}`);
-
-/*
-  END TASK 3
-*/
 
 /*
   ==================================
@@ -93,16 +81,12 @@ console.log(`userName is ${typeof userName}, userNameToInt is ${typeof userNameT
   Сложите переменные так, чтобы в результате получилось выражение: **`12 белых медведей`** и результат выведите в консоль.
 */
 
-let a = 1;
-let b = 2;
-let c = "белых медведей";
+const a = 1;
+const b = 2;
+const c = "белых медведей";
 
 console.log('TASK 4');
 console.log(`${a}${b} ${c}`);
-
-/*
-  END TASK 4
-*/
 
 /*
   ==================================
@@ -125,14 +109,10 @@ const frostWord = "наледь";
 const reproachWord = "попрек";
 const choppedWord = "рубило";
 
-let lengthSum = accessWord.length + marineWord.length + frostWord.length + reproachWord.length + choppedWord.length;
+const lengthSum = accessWord.length + marineWord.length + frostWord.length + reproachWord.length + choppedWord.length;
 
 console.log('TASK 5');
 console.log(`Length of all words is ${lengthSum}`);
-
-/*
-  END TASK 5
-*/
 
 /*
   ==================================
@@ -155,10 +135,6 @@ console.log(`Variable: stringVar, have type: ${typeof stringVar};`);
 console.log(`Variable: booleanVar, have type: ${typeof booleanVar};`);
 
 /*
-  END TASK 6
-*/
-
-/*
   ==================================
 */
 
@@ -172,10 +148,6 @@ const personAge = prompt('Person Age:');
 
 console.log('TASK 7');
 console.log(`Person name: ${personName}, person age: ${personAge};`);
-
-/*
-  END TASK 7
-*/
 
 /*
   ==================================
@@ -206,10 +178,6 @@ console.log(`Current q: ${q}`);
 console.log(`Current w: ${w}`);
 
 /*
-  END ADVANCED TASK 1
-*/
-
-/*
   ==================================
 */
 
@@ -228,17 +196,17 @@ console.log(`Current w: ${w}`);
   Создайте переменную **`cipher`** и поместите туда необходимые символы
 */
 
-let codeWord1 = "обернись";
-let codeWord2 = "неужели";
-let codeWord3 = "огурцы";
-let codeWord4 = "липкие";
-let codeWord5 = "?!";
+const codeWord1 = "обернись";
+const codeWord2 = "неужели";
+const codeWord3 = "огурцы";
+const codeWord4 = "липкие";
+const codeWord5 = "?!";
 
-let cipher = codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1];
+const cipher = codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1];
 
 console.log('ADVANCED TASK 2');
 console.log(cipher);
 
 /*
-  END ADVANCED TASK 2
+  ==================================
 */
