@@ -127,9 +127,9 @@ const student2 = {
   name: 'Polina',
   age: 27,
 }
-console.log(student1 === student2);
+console.log(student1 === student2); //false
 student1 = student2;
-console.log(student1 === student2)
+console.log(student1 === student2) //true
 
 
 /* Task 3 desktop_computer
