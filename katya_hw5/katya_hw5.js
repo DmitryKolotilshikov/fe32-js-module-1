@@ -90,10 +90,17 @@ const colors = {
           alexandra: 199
       }
 
-      
+  function averageSalary (salaries) {
+    let size = Object.keys(salaries).length;
+    let sum = 0;
+    for (let salary of Object.values(salaries)) {
+    sum += salary;
+  }
 
+  return sum / size ;
+  }
 
-
+  console.log(averageSalary(salaries) )
 
 
 // Task 6 🖥
