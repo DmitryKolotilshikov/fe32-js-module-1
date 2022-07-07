@@ -83,25 +83,24 @@ const colors = {
 // Вычислите среднюю зарплату сотрудников и результат поместите в соответствующую переменную
 
   let salaries = {
-          andrey: 500,
-          sveta: 413,
-          anton: 987,
-          maxim: 664,
-          alexandra: 199
-      }
+    andrey: 500,
+    sveta: 413,
+    anton: 987,
+    maxim: 664,
+    alexandra: 199
+  }
 
   function averageSalary (salaries) {
-    let size = Object.keys(salaries).length;
-    let sum = 0;
-    for (let salary of Object.values(salaries)) {
-    sum += salary;
+  let size = Object.keys(salaries).length;
+  let sum = 0;
+  for (let salary of Object.values(salaries)) {
+  sum += salary;
   }
 
   return sum / size ;
   }
 
   console.log(averageSalary(salaries) )
-
 
 // Task 6 🖥
 // Создать валидатор, запросить у пользователя логин и пароль для регистрации. Затем данные записать в обьект. Потом попросить пользователя подтвердить данные. Если верно введен логин и пароль, вывести сообщение Добро пожалоВать.
