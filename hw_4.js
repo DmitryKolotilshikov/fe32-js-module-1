@@ -39,3 +39,13 @@ console.log (trimString('Anything', 1, 3));
 // Task 4 💻
 // Написать функцию getSumNumbers, которая будет принимать число и вычислять сумму цифр из которых состоит число.
 
+const getSumNum = (number) => {
+    const res = String(number);
+    const resLength = res.length;
+    let sum = 0;
+    for (let i = 0; i < resLength; i++) {
+        sum = Number(res[i]) + sum;
+    }
+    return sum;
+} 
+console.log(getSumNum(222));
