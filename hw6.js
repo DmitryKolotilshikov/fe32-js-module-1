@@ -79,4 +79,13 @@ console.log(allNumbers.indexOf(8))
 
 // Task 7
 
+const binary = [0,0,0,0]
 
+const binary1 = []
+
+for (i=0; i < binary.length; i++){
+    binary1.push(binary[i]);
+    binary1.push(1);
+}
+
+console.log(binary1.toString())
