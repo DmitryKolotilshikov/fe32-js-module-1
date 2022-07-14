@@ -38,8 +38,7 @@ console.log(sumCredit(10000));
 //значение по
 
 const trimString = (str, a, b) => {
-  const trimStr = str.slice(a, b);
-  return trimStr;
+  return str.slice(a, b);
 };
 console.log(trimString('TaskTest', 0, 4));
 
@@ -49,9 +48,9 @@ console.log(trimString('TaskTest', 0, 4));
 //Написать функцию getSumNumbers, которая будет принимать число и вычислять сумму цифр из которых состоит число.
 
 const getSumNumbers = (getNumber) => {
-  let arr = [];
-  let numToString = getNumber.toString();
-  let len = numToString.length;
+  const arr = [];
+  const numToString = getNumber.toString();
+  const len = numToString.length;
   for (let i = 0; i < len; i++) {
     arr.push(+numToString.charAt(i));
   }
@@ -69,7 +68,7 @@ getSumNumbers(33333);
 //Написать функцию getSum которая принимает два целых числа a и b, которые могут быть положительными или отрицательными, найти сумму всех чисел между ними, включая их, и вернуть ее. Если два ///числа равны, верните a или b.
 
 const getSumTask5 = (arr) => {
-  let fullArr = [];
+  const fullArr = [];
   let sum = 0;
 
   arr.sort(function (a, b) {
@@ -80,10 +79,7 @@ const getSumTask5 = (arr) => {
     fullArr.push(i);
   }
 
-  sum = fullArr.reduce(
-    (accumulator, currentValue) => accumulator + currentValue
-  );
-
+  sum = fullArr.reduce((acc, currentValue) => acc + currentValue);
   return sum;
 };
 console.log(getSumTask5([1, 3]));
@@ -97,20 +93,16 @@ console.log(getSumTask5([1, 3]));
 //функцию boo которая выводит в консоль свое имя
 //Если переданное булевое значение true запускаем функцию foo иначе boo
 
-const fooboo = (bool, foo, boo) => {
-  function foo() {
-    console.log('foo');
-  }
-  function boo() {
-    console.log('boo');
-  }
+const fooBoo = (bool, foo, boo) => {
+  foo = () => console.log('foo');
+  boo = () => console.log('boo');
   if (bool === true) {
     return foo();
   } else {
     return boo();
   }
 };
-fooboo(false);
+fooBoo(false);
 
 //====================================================================================================================
 
@@ -146,14 +138,13 @@ console.log(breakChocolate(3, 3));
 //Вам следует определить функции для вычисления налога и для форматирования цены со знаком валюты и округлением до двух знаков после запятой.
 //Попробуйте включить ввод данных в вашу программу, например с помощью функции prompt(..). Вы можете, например, запросить у пользователя баланс банковского счета. Развлекайтесь и будьте изобретательны!
 
-const tax = 0.12;
-const phonePrice = 80.7;
-const accessoryPrice = 3.99;
-
-let bankBalance = prompt('enter balance:');
+const bankBalance = prompt('enter balance:');
 let amount = 0;
 
 function buyPhonesAndAccessories() {
+  const tax = 0.12;
+  const phonePrice = 80.7;
+  const accessoryPrice = 3.99;
   const calculateTax = (amount) => amount * tax;
   const formatAmount = (amount) => amount.toFixed(2) + '$';
   while (amount < bankBalance) {
