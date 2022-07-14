@@ -147,7 +147,7 @@ function buyPhonesAndAccessories() {
   const accessoryPrice = 3.99;
   const calculateTax = (amount) => amount * tax;
   const formatAmount = (amount) => amount.toFixed(2) + '$';
-  while (amount < bankBalance) {
+  while (amount <= bankBalance) {
     amount = amount + phonePrice + accessoryPrice;
   }
   amount = amount + calculateTax(amount);
