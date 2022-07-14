@@ -130,12 +130,12 @@ console.log(swapTable('4', '8'));
 //Task 2 🖥
 //Даны два одинаковых обьекта. Сравните их так чтобы они были равны
 
-let student1 = {
+const student1 = {
   name: 'Polina',
   age: 27,
 };
 
-let student2 = {
+const student2 = {
   name: 'Polina',
   age: 27,
 };
