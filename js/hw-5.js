@@ -88,22 +88,21 @@ if ((userNameControl === aviorizationUserObject.userName) && (userPasswordContro
 // ADVANCED level
 /* Task 1 man_teacher
 Мы на футбольном матче, счет забитых голов одной команды не может превышать 9 мячей.Жаль что нам присылают результат матча в формате '2:5', ведь нам надо это вывести в консоль словами.Давайте напишем программу которая будет за нас переводить формат и выводить результат в консоль. */
-const footTable = {
-  0: 'ноль',
-  1: 'один',
-  2: 'два',
-  3: 'три',
-  4: 'четыре',
-  5: 'пять',
-  6: 'шесть',
-  7: 'семь',
-  8: 'восемь',
-  9: 'девять',
-};
-
 function getStringofNomber(oneTeamScore, twoTeamScore) {
-  let oneTeamScoreString
-  let twoTeamScoreString
+  const footTable = {
+    0: 'ноль',
+    1: 'один',
+    2: 'два',
+    3: 'три',
+    4: 'четыре',
+    5: 'пять',
+    6: 'шесть',
+    7: 'семь',
+    8: 'восемь',
+    9: 'девять',
+  };
+  let oneTeamScoreString;
+  let twoTeamScoreString;
   for (const key in footTable) {
     if (oneTeamScore == key) {
       oneTeamScoreString = footTable[key]
@@ -112,7 +111,7 @@ function getStringofNomber(oneTeamScore, twoTeamScore) {
       twoTeamScoreString = footTable[key]
     }
   }
-  return (`${oneTeamScoreString} : ${twoTeamScoreString}`)
+  return (`${oneTeamScoreString} : ${twoTeamScoreString}`);
 }
 
 
@@ -128,8 +127,8 @@ const student2 = {
   age: 27,
 }
 console.log(student1 === student2); //false
-student1 = student2;
-console.log(student1 === student2) //true
+const student1 = student2;
+console.log(student1 === student2); //true
 
 
 /* Task 3 desktop_computer
