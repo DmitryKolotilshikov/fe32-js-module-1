@@ -98,6 +98,50 @@ console.log (newBinary.join(''));
 
 //ADVANCED level
 
+/* Task 1
+Реализуйте функцию которая будет проверять, является ли слово палиндромом.*/
+
+
+const word = prompt ('Введите слово для проверки');
+
+const checkPalindrome = (word) => {
+    const res = word === word.split('').reverse().join(''); 
+    return res;
+}
+
+console.log (checkPalindrome(word));
+
+/* Task 2
+    const matrix = [
+        [12, 98, 78, 65, 23],
+        [54, 76, 98, 43, 65],
+        [13, 324, 65, 312],
+        [9092, 22, 45, 90000],
+    ]
+Выведите в консоль среднее значение чисел в многомерном массиве.*/
+
+const matrix = [
+    [12, 98, 78, 65, 23],
+    [54, 76, 98, 43, 65],
+    [13, 324, 65, 312],
+    [9092, 22, 45, 90000],
+];
+
+const getAverage = (array) => {
+    const res = array.reduce((res, cur) => {
+        res.count += cur.length;
+        res.sum += cur.reduce((s, v) => { return s += v }, 0);
+
+        return res
+    }, { count: 0, sum: 0 });
+
+    return res.sum / res.count; 
+} 
+
+console.log(getAverage(matrix));
+
+//сделала копипаст для себя, чтобы потом разобраться
+
 /*
 Task 3
 Дан массив:
