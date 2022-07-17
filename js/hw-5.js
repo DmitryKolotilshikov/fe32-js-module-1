@@ -102,8 +102,9 @@ let averageSaleary = 0;
 for (let key in salaries) {
    persons++;
    sumSalary += salaries[key];
-   averageSalary = sumSalary / persons;
 }
+
+const averageSalary = sumSalary / persons;
 
 console.log(averageSalary);
 
@@ -149,8 +150,8 @@ const numbers = {
 };
 
 function getGameScore (oneNumber, twoNumer) {
-   let a
-   let b
+   let a = 0;
+   let b = 0;
 
    for (const key in numbers) {
       if (oneNumber == key) {
@@ -160,36 +161,10 @@ function getGameScore (oneNumber, twoNumer) {
          b = numbers[key];
       }
    }
-   return (`${a} : ${b}`)
+   return `${a} : ${b}`;
 }
 
 getGameScore(3, 5);
-
-/* Task 2 🖥
-Даны два одинаковых обьекта. Сравните их так чтобы они были равны
-
-    let student1 = {
-        name: 'Polina',
-        age: 27,
-    }
-
-    let student2 = {
-        name: 'Polina',
-        age: 27,
-    } */
-
-   const student1 = {
-      name: 'Polina',
-      age: 27,
-   }
-
-   const student2 = {
-      name: 'Polina',
-      age: 27,
-   }
-
-   const student1 = student2;
-   console.log (student1 == student2);
 
 /* Task 3 🖥
 У нас есть обьект с животными. Наша задача узнать имя птицы и вывести его в консоль. 
