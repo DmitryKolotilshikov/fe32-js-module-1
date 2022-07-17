@@ -8,6 +8,7 @@ console.log(colors.length);
 Выведите в консоль его последний элемент вне зависимости от его длинны. */
 const animals = ['monkey', 'dog', 'cat'];
 console.log(animals.at(-1));
+console.log(animals[animals.length - 1])
 
 
 /* Task 3 desktop_computer
@@ -21,14 +22,9 @@ const numbers2 = [5, 43, 63, 23, 90];
 numbers.length = 0;
 console.log(numbers);
 
-
 const numbers3 = [5, 43, 63, 23, 90];
-numbers2.shift(0)
-numbers2.shift(1)
-numbers2.shift(2)
-numbers2.shift(3)
-numbers2.shift(4)
-console.log(numbers2)
+numbers3.splice(numbers3[numbers3.length])
+console.log(numbers3)
 
 
 /* Task 4 desktop_computer
@@ -36,7 +32,7 @@ console.log(numbers2)
 Удалите первый элемент массива, затем вместо него добавьте в массив студента Andrey.
 Полученный результат не забудьте вывести в консоль. */
 const students = ['Polina', 'Dasha', 'Masha'];
-students.splice(2, 1, 'Borya');
+students.splice(-1, 1, 'Borya');
 students.splice(0, 1, 'Andrey');
 console.log(students);
 
@@ -103,8 +99,8 @@ matrix.forEach((item, index) => {
 /* Task 3 man_teacher
 Создайте два массива, в один поместите все положительные числа включая 0, в другой все отрицательные.Оба массива затем выведите в консоль. */
 const mixedNumbers = [-14, 24, -89, 43, 0, -1, 412, 4]
-let positiveNumbers = []
-let negativeNumbers = []
+const positiveNumbers = []
+const negativeNumbers = []
 for (const i of mixedNumbers) {
   if (i >= 0) {
     positiveNumbers.push(i)
@@ -118,6 +114,6 @@ console.log(negativeNumbers)
 
 /* Task 4 man_teacher
 Создать массив длинной не менее 5, из динамически созданных случайных чисел.Далее написать алгоритм который берет все числа из исходного массива, возводит их в куб и записывает в новый массив.В конце вывести оба массива в консоль. */
-const myArray = [2, 4, 6, 8, 10];
+const myArray = [Math.random(), Math.random(), Math.random(), Math.random(), Math.random()];
 const newMyArray = myArray.map((item) => Math.pow(item, 3))
 console.log(newMyArray)
