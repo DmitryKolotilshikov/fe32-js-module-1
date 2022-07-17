@@ -35,11 +35,14 @@ getSum(100); */
 
 const creditSum = prompt('Введите сумму кредита');
 
+
 function getCreditDebt (creditSum) {
+    const years = 5;
+    const percent = 0.17;
 
     let res=0;
-    for (let i=0; i < 5; i++) {
-    res += creditSum/5+(creditSum - creditSum/5*i)*0.17
+    for (let i = 0; i < 5; i++) {
+    res += creditSum / 5 + (creditSum - creditSum / years * i) * percent
     }
     return res-creditSum;
 }
@@ -108,11 +111,10 @@ console.log(getSum (1, 4));
 функцию boo которая выводит в консоль свое имя
 Если переданное булевое значение true запускаем функцию foo иначе boo */
 
-
 fooFunc = () => {console.log ('Foo')};
 booFunc = () => {console.log ('Boo')};
 
-function fooboo (boolean, fooFunc, booFunc)
+function fooBoo (boolean, fooFunc, booFunc)
 {
     if (boolean) {
         fooFunc ();
@@ -120,7 +122,7 @@ function fooboo (boolean, fooFunc, booFunc)
     }
 }
 
-console.log(fooboo(false, fooFunc, booFunc))
+console.log(fooBoo(false, fooFunc, booFunc))
 
 
 // ADVANCED level
@@ -152,9 +154,11 @@ isTriangle (3, 1, 3)
 
 function sectionChocolate (n, m) {
     let sumSectionChocolate = 0;
+    
     if (n >= 1 && m >= 1) {
     sumSectionChocolate = n + m - 2
     return sumSectionChocolate}
+
     else {console.log (0)};
 }
 
