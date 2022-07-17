@@ -13,13 +13,17 @@ console.log(colors.length);
 
 const animals = ['monkey', 'dog', 'cat'];
 console.log(animals.at(-1));
+console.log(animals[animals.length - 1]);
+console.log(animals.slice(-1));
+console.log(animals.pop());
 
 //Task3
 //Дан массив:
 //Удалите все элементы в массиве и выведите в консоль полученный результат.
 
 const numbers = [5, 43, 63, 23, 90];
-numbers.length = 0;
+// numbers.length = 0;
+numbers.splice(0, numbers.length);
 console.log(numbers);
 
 //Task4
@@ -62,20 +66,24 @@ console.log(mergedArray.indexOf(8));
 //Превратите данный массив в строку.
 
 const binary = [0, 0, 0, 0];
-const mappedBinary = binary.map((element) => element + '1');
-console.log(mappedBinary.join(''));
+console.log(binary.join('1'));
 
 //ADVANCED level Task1
 //Для решения задач используйте циклы for или for of
 //Реализуйте функцию которая будет проверять, является ли слово палиндромом.
 
+//Легкий путь --------->
+const checkPalindromes = (s) => s === s.split('').reverse().join('');
+checkPalindromes('assa');
+
+//Сложный путь------------>
 const palindromTest = (str) => {
   for (let i = 0, j = str.length - 1; i < j; i++, j--) {
     if (str[i] != str[j]) {
-      return console.log('Это не палиндром!');
+      return false;
     }
   }
-  return console.log('Это палиндром!');
+  return true;
 };
 palindromTest('acca');
 
@@ -87,12 +95,13 @@ const matrix = [
   [13, 324, 65, 312],
   [9092, 22, 45, 90000],
 ];
-
+let sum = 0;
+let count = 0;
 for (let value of matrix) {
-  const amount = value.reduce((total, el) => total + el, 0);
-  const average = amount / value.length;
-  console.log('Среднее значение:', average);
+  count += value.length;
+  value.forEach((el) => (sum += el));
 }
+console.log('Среднее значение матрицы:', sum / count);
 
 //Task 3
 //Дан массив:
