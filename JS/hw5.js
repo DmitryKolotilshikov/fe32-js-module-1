@@ -9,6 +9,7 @@ const cat = {
 }
 console.log(cat);
 delete cat.userName;
+delete cat.breed;
 console.log(cat);
 
 // Task 2 🖥
@@ -75,17 +76,15 @@ const login = prompt('Введите ваш логин');
 const password = prompt('Введите ваш пароль');
 const objectUser = {login, password};
 
-const checkLogin = prompt('Подтвердите ваш логин');
-const checkPassword = prompt('Подтвердите ваш пароль');
-
-if (objectUser.login === checkLogin && objectUser.password === checkPassword) {
-	console.log('Добро пожаловать!');
-	alert('Добро пожаловать!');
-}
-else{
-	console.log('Попробуйте еше раз!');
-	alert('Попробуйте еше раз!');
-}
+const validator = (checkLogin, checkPassword) => {
+	if (checkLogin === objectUser.login && checkPassword === objectUser.password) {
+	  console.log('Добро пожаловать!');
+	  alert('Добро пожаловать!');
+	}
+	else { console.log('Попробуйте еше раз!');
+			 alert('Попробуйте еше раз!');}
+ };
+ validator(prompt('Подтвердите ваш логин:'), prompt('Подтвердите ваш пароль:'));
 
 // ADVANCED level
 
@@ -105,9 +104,4 @@ const student2 = {
     age: 27,
 };
 
-if (("name" in student1 === "name" in student2) && ("age" in student1 == "age" in student2)) {
-	console.log('true');
-}
-else {
-	console.log('false');
-}
+console.log(JSON.stringify(student1) === JSON.stringify(student2));
