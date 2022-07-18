@@ -38,7 +38,6 @@ console.log(sumCredit(1000));
 // После вызова функция должна вернуть переданную строку обрезанную по значениям от и по
 
 function trimString (row, from, by) {
-	let res = 0;
 	return row.slice(from, by);
 }
 
@@ -90,24 +89,24 @@ function getSum(a, b) {
 // функцию boo которая выводит в консоль свое имя
 // Если переданное булевое значение true запускаем функцию foo иначе boo
 
-function fooboo(boolean, foo, boo){
-	foo = 'foo';
-	boo = 'boo';
+function fooBoo(boolean, foo, boo){
+	foo = () => console.log('foo');
+	boo = () => console.log('boo');
 	if (boolean === true){
-		return foo;
+		foo();
 	}
 	else {
-		return boo
+		boo();
 	}
 }
-console.log(fooboo(true));
+console.log(fooBoo(true));
 
 // ADVANCED level
 
 // Task 1 👨‍🏫
 // Реализуйте функцию, который принимает 3 целочисленных значения a, b, c. Функция должна возвращать true, если треугольник можно построить со сторонами заданной длины, и false в любом другом случае.
 
-function triangle(a, b, c) {
+function checkIsTriangle(a, b, c) {
 	if (a + b > c && a + c > b && b + c > a) {
 		console.log('true');
 	}
@@ -115,7 +114,7 @@ function triangle(a, b, c) {
 	}
 }
 
-triangle(1, 2 , 3)
+checkIsTriangle(1, 2 , 3)
 
 
 // Task 3 👨‍🏫
