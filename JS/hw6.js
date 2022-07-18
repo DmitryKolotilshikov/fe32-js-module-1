@@ -18,6 +18,7 @@ console.log(colors.length);
 const animals = ['monkey', 'dog', 'cat'];
 
 console.log(animals.at(-1));
+console.log(animals.pop());
 
 // Task 3 🖥
 // Дан массив:
@@ -27,7 +28,7 @@ console.log(animals.at(-1));
 
 const numbers = [5, 43, 63, 23, 90];
 
-console.log(numbers.splice(5));
+console.log(numbers.splice(0));
 numbers.length = 0;
 console.log(numbers);
 
