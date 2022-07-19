@@ -17,6 +17,8 @@ console.log (colors.length);
 
 const animals = ['monkey', 'dog', 'cat'];
 console.log (animals.pop());
+console.log (animals.at(-1));
+
 
 /*Task 3 🖥
 Дан массив:
@@ -32,7 +34,7 @@ console.log (numbers);
 
 
 const numbers = [5, 43, 63, 23, 90];
-numbers.splice(0, 5);
+numbers.splice(0, numbers.length);
 console.log (numbers);
 
 
@@ -50,6 +52,10 @@ students.push ('Borya');
 students.shift ();
 students.unshift ('Andrey');
 console.log (students);
+
+students.splice(-1, 1, 'Borya');
+students.splice(0, 1, 'Andrey');
+console.log(students);
 
 /*
 Task 5 🖥
@@ -94,6 +100,8 @@ Task 7
 const binary = [0, 0, 0, 0];
 const newBinary = binary.map ((element) => element + '1');
 console.log (newBinary.join(''));
+
+console.log(binary.join('1'));
 
 
 //ADVANCED level
