@@ -17,6 +17,10 @@ fibonacci.forEach ((element) => {
    console.log (element);
 });
 
+fibonacci.forEach(function callBackFibonacci(element) {
+    console.log(element);
+  });
+
 /* Task 2 🖥
 Используя метод map создайте новый массив, на основе массива users, 
 в котором каждый элемент массива будет содержать строку вида:
@@ -27,8 +31,13 @@ fibonacci.forEach ((element) => {
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
-const newUsers = users.map ((el) => 'member 1: '+ el);
-console.log (newUsers);
+const newUsers1 = users.map ((el) => 'member 1: '+ el);
+console.log (newUsers1);
+
+const newUsers2 = users.map(function(el) {
+    return 'member 1: '+ el;
+});
+console.log (newUsers2);
 
 /* Task 3 🖥
 С помощью метода filter создайте новый массив в котором не будет отрицательных чисел.
@@ -37,9 +46,13 @@ console.log (newUsers);
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const numbers = [7, -4, 32, -90, 54, 32, -21];
-const filteredNumbers = numbers.filter ((element) => element >= 0);
+const filteredNumbers1 = numbers.filter ((element) => element >= 0);
+console.log (filteredNumbers1);
 
-console.log (filteredNumbers);
+const filteredNumbers2 = numbers.filter(function(element) {
+    return element >= 0;
+});
+console.log (filteredNumbers2);
 
 /* Task 4 🖥
 Используя метод reduce получите сумму всех чисел массива.
@@ -48,13 +61,19 @@ console.log (filteredNumbers);
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987];
-const sumFibonacci = fibonacci.reduce ((acc, cur) => {
+const sumFibonacci1 = fibonacci.reduce ((acc, cur) => {
     acc += cur;
     return acc
 }, 0);
 
-console.log(sumFibonacci);
+console.log(sumFibonacci1);
 
+const sumFibonacci2 = fibonacci.reduce(function (acc, cur) {
+    acc += cur;
+    return acc
+}, 0);
+
+console.log(sumFibonacci2);
 
 
 /* Task 5 🖥
@@ -64,8 +83,13 @@ console.log(sumFibonacci);
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const numbers = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5];
-const numbersFind = numbers.find ((element) => element % 2 === 0);
-console.log(numbersFind);
+const numbersFind1 = numbers.find ((element) => element % 2 === 0);
+console.log(numbersFind1);
+
+const numbersFind2 = numbers.find (function(element) {
+    return element % 2 === 0;
+})
+console.log(numbersFind2);
 
 
 // ADVANCED level
@@ -121,7 +145,7 @@ accum("abcd");
 const highAndLow = ("1 2 3 4 5");
 
 const max = Math.max(...highAndLow.split(' '));
-const min = Math.min(highAndLow.split(' '));
+const min = Math.min(...highAndLow.split(' '));
 const resMaxAndMin = max + ' ' + min;
 console.log(resMaxAndMin);
 
