@@ -43,6 +43,12 @@
   
   1. [Изучение GIT в интерактивной форме](https://learngitbranching.js.org/?locale=ru_RU)
   2. [CodeWars](https://www.codewars.com/)
+  
+## DOM | Events
+
+  1. [Document, документ и события](https://learn.javascript.ru/document)
+  2. [Events - ALL TYPES](https://www.w3schools.com/jsref/dom_obj_event.asp)
+  3. [append vs appendchild](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
 
 ## Topics
 
