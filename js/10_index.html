@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="10.1_index.js" type="module" defer></script>
+    <style>
+        .parent, .child, .grandchild, td {
+            border: 1px solid olive;
+            padding: 1em;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .bg {
+            background-color: rgb(255, 171, 140);
+        }
+        /* h3 > span {
+            color: red;
+        } */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: fit-content;
+            border: 1px solid black;
+            padding: .5em;
+            background-color: rgb(209, 209, 209);
+        }
+        .modal-orange {
+            background-color: rgb(251, 228, 175);
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <section class="parent">
+        parent
+        <div class="child">
+            child
+            <p class="grandchild">
+                grandchild
+            </p>
+        </div>
+    </section> -->
+
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td id="row1-col1">1</td>
+                <td id="row1-col2">2</td>
+                <td id="row1-col3">3</td>
+            </tr>
+            <tr>
+                <td id="row2-col1">4</td>
+                <td id="row2-col2" contenteditable>5</td>
+                <td id="row2-col3">6</td>
+            </tr>
+            <tr>
+                <td id="row3-col1">7</td>
+                <td id="row3-col2">8</td>
+                <td id="row3-col3">9</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+    <!-- <ul id="list"></ul> -->
+
+    <!-- <input type="range">
+
+    <h3 id="header"></h3> -->
+
+    <div 
+    id="person" 
+    data-info="Anton from Minsk"
+    data-age="33"
+    >Hello my friend</div>
+
+    <button data-modal="modal-1">show modal 1</button>
+    <button data-modal="modal-2">show modal 2</button>
+
+    <div class="modal" id="modal-1">
+        <h2>MODAL 1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="modal modal-orange" id="modal-2">
+        <h2>MODAL 2</h2>
+        <p>Далеко-далеко за словесными горами в стране.</p>
+    </div>
+</body>
+</html>
