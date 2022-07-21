@@ -46,9 +46,11 @@
   
 ## DOM | Events
 
-  1. [Document, документ и события](https://learn.javascript.ru/document)
-  2. [Events - ALL TYPES](https://www.w3schools.com/jsref/dom_obj_event.asp)
-  3. [append vs appendchild](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
+  1. [Document, документ](https://learn.javascript.ru/document)
+  2. [Events, события](https://learn.javascript.ru/events)
+  3. [Interface events, интерфейсные события](https://learn.javascript.ru/event-details)
+  4. [Events - ALL TYPES](https://www.w3schools.com/jsref/dom_obj_event.asp)
+  5. [append vs appendchild](https://dev.to/ibn_abubakre/append-vs-appendchild-a4m)
 
 ## Topics
 
