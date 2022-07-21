@@ -44,10 +44,10 @@ const apple = false;
 const orange = true;
 
 if (key && documents && pen && (apple || orange)) {
-	let shouldGoToWork = "Let's go!";
+	const shouldGoToWork = "Let's go!";
 	console.log('Task 4:', shouldGoToWork)}
 	else {
-		let shouldGoToWork = "Check if you have taken everything?";
+		const shouldGoToWork = "Check if you have taken everything?";
 		console.log('Task 4:', shouldGoToWork)}
 
 // Task 5 💻
@@ -57,10 +57,12 @@ if (key && documents && pen && (apple || orange)) {
 // 3. Если число делится без остатка и на 3 и на 5 выводим сообшение FizBuz
 
 const numb = prompt('Введите число:');
+const firstCondition = numb % 5 == 0;
+const secondCondition = numb % 3 == 0;
 
-if ( numb % 5 == 0 && numb % 3 == 0) { console.log("Task 5: FizBuz"), alert("FizBuz")}
-else if (numb % 5 == 0) { console.log("Task 5: Fiz"), alert("Fiz")}
-else if ( numb % 3 == 0) { console.log('Task 5: Buz'), allert('Buz')}
+if ( firstCondition && secondCondition) { console.log("Task 5: FizBuz"), alert("FizBuz")}
+else if (firstCondition) { console.log("Task 5: Fiz"), alert("Fiz")}
+else if ( secondCondition) { console.log('Task 5: Buz'), allert('Buz')}
 else { console.log("Task 5: Число не делится без остатка ни на 3, ни на 5"), alert("Число не делится без остатка ни на 3, ни на 5")};
 
 // Task 6 💻
