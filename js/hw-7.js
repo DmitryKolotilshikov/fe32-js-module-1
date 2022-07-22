@@ -13,7 +13,7 @@
 
 const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987];
 
-fibonacci.forEach ((element) => {
+fibonacci.forEach((element) => {
    console.log (element);
 });
 
@@ -31,11 +31,11 @@ fibonacci.forEach(function callBackFibonacci(element) {
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
-const newUsers1 = users.map ((el) => 'member 1: '+ el);
+const newUsers1 = users.map((el, index) => `member ${index+1}: ${el}`);
 console.log (newUsers1);
 
-const newUsers2 = users.map(function(el) {
-    return 'member 1: '+ el;
+const newUsers2 = users.map(function(el, index) {
+    return `member ${index+1}: ${el}`
 });
 console.log (newUsers2);
 
@@ -46,7 +46,7 @@ console.log (newUsers2);
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const numbers = [7, -4, 32, -90, 54, 32, -21];
-const filteredNumbers1 = numbers.filter ((element) => element >= 0);
+const filteredNumbers1 = numbers.filter((element) => element >= 0);
 console.log (filteredNumbers1);
 
 const filteredNumbers2 = numbers.filter(function(element) {
@@ -61,7 +61,7 @@ console.log (filteredNumbers2);
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987];
-const sumFibonacci1 = fibonacci.reduce ((acc, cur) => {
+const sumFibonacci1 = fibonacci.reduce((acc, cur) => {
     acc += cur;
     return acc
 }, 0);
@@ -83,10 +83,10 @@ console.log(sumFibonacci2);
 Реализуйте решение двумя способами, используя function declaration & arrow function. */
 
 const numbers = [5, 9, 13, 24, 54, 10, 13, 99, 1, 5];
-const numbersFind1 = numbers.find ((element) => element % 2 === 0);
+const numbersFind1 = numbers.find((element) => element % 2 === 0);
 console.log(numbersFind1);
 
-const numbersFind2 = numbers.find (function(element) {
+const numbersFind2 = numbers.find(function(element) {
     return element % 2 === 0;
 })
 console.log(numbersFind2);
