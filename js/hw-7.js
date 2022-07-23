@@ -14,8 +14,7 @@ fibonacci.forEach(getElements) //function declaration
 /* Task 2 desktop_computer
 Используя метод map создайте новый массив, на основе массива users, в котором каждый элемент массива будет содержать строку вида: ['member 1: Darya', 'member 2: Masha', ...etc] */
 const users = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
-let num = 1;
-const newArrayusers = users.map(el => `member ${num++}: ${el}`);
+const newArrayusers = users.map((el, index) => `member ${++index}: ${el}`);
 
 
 
@@ -46,7 +45,7 @@ fibonacci.reduce((sum, item) => {
 
 function getSum(sum, el) {
   sum += el
-  return (sum)
+  return sum
 }
 const resSum = fibonacci.reduce(getSum) //function declaration
 
@@ -59,7 +58,7 @@ const OnePositiveNumbers = numbers.find(item => item % 2 == 0); // arrow functio
 
 
 function getPositiveNumbers(el) {
-  el = el % 2 == 0
+  el = el % 2 === 0
   return (el)
 }
 const res = numbers.find(getPositiveNumbers) //function declaration
@@ -128,7 +127,7 @@ strReplace('This website is for losers LOL!');
 В приведенных ниже примерах показано, как написать функцию: */
 const accum = (str) => {
   const strUpArr = str.toUpperCase().split('');
-  return (strUpArr.map((el, index) => el + el.toLowerCase().repeat(index)).join('-'));
+  return strUpArr.map((el, index) => el + el.toLowerCase().repeat(index)).join('-');
 
 };
 accum("abcd");
