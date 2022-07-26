@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+</head>
+<body>
+    <script>
+        window.addEventListener('storage', (e) => {
+            console.log('event storage');
+            console.log(e.key);
+            console.log('oldValue', e.oldValue);
+            console.log('newValue', e.newValue);
+            console.log('storageArea', e.storageArea);
+            console.log('url', e.url);
+        });
+    </script>
+</body>
+</html>

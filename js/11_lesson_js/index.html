@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="index.js" type="module" defer></script>
+</head>
+
+<body>
+    <!-- <div>
+        <h3>
+            Counter-1:
+            <input type="button" value="1" data-counter>
+        </h3>
+    </div>
+
+    <div>
+        <h3>
+            Counter-2:
+            <input type="button" value="1" data-counter>
+        </h3>
+    </div>
+
+    <h1 data-title-main="World" data-title2="!!!">Hello</h1> -->
+
+    <!-- <button class="add">add item to storage</button>
+    <hr>
+    <button class="clear">clear storage</button>
+    <hr>
+    <a href="index_storage.html" target="_blank">move to second page</a>
+    <section data-cars-list></section> -->
+
+    <div class="container">
+        <div class="todo">
+            <input type="text" class="todo__input-add" data-input-add>
+            <button type="button" class="todo__button-add" data-button-add>ADD TODO</button>
+
+            <div class="todo__container" data-todo-container></div>
+        </div>
+    </div>
+
+    <template data-todo-item-template>
+        <div class="todo__item" data-todo-item>
+            <input type="checkbox" class="todo__checkbox" data-todo-checkbox>
+            <div class="todo__title" data-todo-title>Do homework</div>
+            <button class="todo_button-remove" data-button-remove>❌</button>
+        </div>
+    </template>
+
+</body>
+
+</html>
