@@ -4,6 +4,10 @@
 ---
 # HOMEWORK 3
 
+```
+    learn.javascript.ru  прочитать п2.8 - п.2.14  (решать задачи в конце каждой главы, если они есть)
+```
+
 ## Complete exercise
 
 ### NORMAL level
