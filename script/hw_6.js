@@ -222,7 +222,6 @@ for(let i = 0; i < matrix.length; i++) {
 
   for(let k = 0; k < matrix[i].length; k++) {
     matrixSum += matrix[i][k];
-    matrixElCounts += 0;
   }
 }
 
@@ -285,7 +284,7 @@ for(let i = 0; i <= 5; i++) {
 
 console.log(`Array with random numbers: ${randomArr}`);
 
-const cubbedRandonArr = randomArr.map((el) => el * el * el);
+const cubbedRandonArr = randomArr.map((el) => Math.pow(el, 3));
 console.log(`Array with modified random numbers: ${cubbedRandonArr}`);
 /*
   ==================================
