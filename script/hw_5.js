@@ -118,7 +118,7 @@ console.log(colors["ru pum pu ru rum"].red, ',', colors["ru pum pu ru rum"].blue
 
 console.log('TASK 5');
 
-let salaries = {
+const salaries = {
   andrey: 500,
   sveta: 413,
   anton: 987,
@@ -189,8 +189,8 @@ const score = {
   blueTeam: 4
 };
 
-let redTeamScore = score.redTeam;
-let blueTeamScore = score.blueTeam;
+const redTeamScore = score.redTeam;
+const blueTeamScore = score.blueTeam;
 
 console.log(`${redTeamScore} : ${blueTeamScore}`);
 
@@ -244,21 +244,33 @@ console.log(`${changeScoreFormat(redTeamScore)} : ${changeScoreFormat(blueTeamSc
   }
 */
 
-console.log('ADVANCED TASK 1');
+console.log('ADVANCED TASK 2');
 
-let student1 = {
+const student1 = {
   name: 'Polina',
-  age: 27,
+  age: 27
 };
 
-let student2 = {
+const student2 = {
   name: 'Polina',
-  age: 27,
+  age: 27
 };
 
-console.log(student1 === student2);
-student1 = student2;
-console.log(student1 === student2);
+console.log('Just comparing: ', student1 === student2);
+
+const objEqualyty = (obj1, obj2) => {
+  for(let key in obj1) {
+    if(obj1[key] === obj2[key]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+
+console.log('By for...in: ', objEqualyty(student1, student2));
+
+console.log('By JSON stringlify: ', JSON.stringify(student1) === JSON.stringify(student2));
 
 /*
   ==================================
@@ -283,6 +295,8 @@ console.log(student1 === student2);
   }
 */
 
+console.log('ADVANCED TASK 3');
+
 const animals = {
   cat: {
     name: 'Енчик',
@@ -294,7 +308,7 @@ const animals = {
   }
 };
 
-console.log(animals && animals.bird && animals.bird.name);
+console.log(animals.bird?.name, "Correct");
 
 /*
   ==================================
